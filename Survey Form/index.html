@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title><link rel="stylesheet" href="main.css">
+  </head>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">This is a demo project   </p>
+  <form id="survey-form">
+    <fieldset>
+    <label for="name">Enter Your Name:</label>
+    <input type="text" id="name" placeholder="name" required>
+    <label for="email">Enter Your Email:</label>
+    <input type="email" id="email" placeholder="email" required>
+    <label for="number" >Enter Your Number:</label>
+    <input type="number" id="number" placeholder="number" min="11" max="16" >
+</fieldset>
+<fieldset>
+  <legend>Your Job</legend>
+  <label for="dropdown">
+  <select id="dropdown" name="dropdown">
+    <option value="">Jobs</option>
+    <option value="1">Front-End</option>
+    <option value="2">Back-End</option>
+    <option value="3">Full-Stack</option>
+    </select>
+    </label>
+  </fieldset>
+<fieldset class="gender">
+  <legend>Gender</legend>
+        <label for="male"><input id="male" type="radio" name="gender" class="inline" checked /> Male</label>
+        <label for="female"><input id="female" type="radio" name="gender" class="inline" /> Female</label>
+  </fieldset>
+<fieldset>
+  <legend>The Languages</legend>
+  <label for="html">
+        <input class="inline" id="html" type="checkbox" value="html" required name="langs" />HTML</label>
+        <label for="css">
+        <input class="inline" id="css" type="checkbox" value="css" required name="langs" />CSS</label>
+        <label for="js">
+        <input class="inline" id="js" type="checkbox" value="js" required name="langs" />JS</label>
+  </fieldset>
+  <textarea id="bio" placeholder="Talk About Yourself..." rows="3" cols="30"></textarea>
+  <button id="submit">Submit</button>
+  </form>
+</body>
+</html>
